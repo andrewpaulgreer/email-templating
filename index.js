@@ -18,13 +18,29 @@ function sendEmail(obj){
 
 // create array of objcts for users 
 let users = [
-    {
-
-    }
+    {   
+        name: 'drew',
+        email: 'drewgreer12@gmail.com'
+    },
+    {   
+        name: 'anotheruser',
+        email: 'drewgreer12@gmail.com'
+    }, 
+    {   
+        name: 'anotheruser',
+        email: 'drewgreer12@gmail.com'
+    },
 ];
 
 //loading templates
 function loadTemplate(templateName, contexts){
  let template = new EmailTemplate(path.join(__dirname, 'templates', templateName));
- return Promise.all()
+ return Promise.all(contexts.map((context)=> {
+     return new Promise((resolve, reject)=> {
+         template.render(context, (rerr, result)=> {
+            if(err) reject(err);
+            else resolve(result);
+        })
+     })
+ }))
 }

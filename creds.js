@@ -1,1 +1,1 @@
-export let 
+export let email="andrewgreer2015@gmail.com", password="Fenderdg2@"
