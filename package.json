@@ -18,7 +18,7 @@
   "homepage": "https://github.com/andrewpaulgreer/email-templating#readme",
   "dependencies": {
     "bluebird": "^3.7.2",
-    "email-templates": "^8.0.2",
+    "email-templates": "^2.7.1",
     "handlebars": "^4.7.6",
     "nodemailer": "^6.4.16"
   }

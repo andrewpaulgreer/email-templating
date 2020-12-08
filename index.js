@@ -1,15 +1,14 @@
 const nodemailer = require('nodemailer'),
-creds = requore("./creds"),
+
 transporter = nodemailer.createTransport({
     service: 'gmail',
     auth: {
-        user: creds.user,
-        pass:creds.pass
+       
     },
 }),
 //grabbing email templates
-EmailTemplate = require ('email-templates').EmailTemplate,
-path = require("path)",
+EmailTemplate = require('email-templates').EmailTemplate,
+path = require("path"),
 Promise = require('bluebird');
 
 function sendEmail(obj){
@@ -37,10 +36,14 @@ function loadTemplate(templateName, contexts){
  let template = new EmailTemplate(path.join(__dirname, 'templates', templateName));
  return Promise.all(contexts.map((context)=> {
      return new Promise((resolve, reject)=> {
-         template.render(context, (rerr, result)=> {
+         template.render(context, (err, result)=> {
             if(err) reject(err);
             else resolve(result);
         })
      })
  }))
 }
+
+loadTemplate('welcome-email', users).then((results)=> {
+    console.log(JSON.stringify(results, null, 4))
+})
