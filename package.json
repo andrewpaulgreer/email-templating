@@ -1,0 +1,25 @@
+{
+  "name": "email-templating",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/andrewpaulgreer/email-templating.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/andrewpaulgreer/email-templating/issues"
+  },
+  "homepage": "https://github.com/andrewpaulgreer/email-templating#readme",
+  "dependencies": {
+    "bluebird": "^3.7.2",
+    "email-templates": "^8.0.2",
+    "handlebars": "^4.7.6",
+    "nodemailer": "^6.4.16"
+  }
+}
