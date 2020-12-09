@@ -1,0 +1,63 @@
+*{
+    box-sizing: border-box;
+}
+.header{
+    color: white;
+    margin-top: 2%;
+    
+}
+.header-shell{
+    width: 50%;
+}
+.body{
+    color: white;
+    font-size: 20px;
+}
+.call-to-action{
+    
+    margin-bottom: 10px;
+}
+
+.scoreBtn{
+    background-color: #18246D;
+    color: white;
+    border-radius: 5px;
+    width: 300px;
+    height: 50px;
+    border-color: black;
+    font-size: medium;
+    font-family: sans-serif;
+    font-weight: bolder;
+}
+
+.disclaimer{
+    color: white;
+    font-size: 20px;
+}
+.wrapper{                       
+    width: 100%;
+    table-layout: fixed;
+    background-color: #f6f9fc;
+    padding-bottom: 40px;
+    
+}
+
+.webkit{
+    max-width: 600px;
+    background-color: #43DB9A;
+    height: 600px;
+  
+}
+
+.outer{
+margin: 0 auto;
+width: 100%;
+max-width: 600px;
+}
+
+@media screen and (max-width: 600px){
+
+}
+@media screen and (max-width: 400px){
+    
+}

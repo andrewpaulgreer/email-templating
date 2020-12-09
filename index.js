@@ -3,8 +3,8 @@ const nodemailer = require('nodemailer'),
 transporter = nodemailer.createTransport({
     service: 'gmail',
     auth: {
-        user: "andrewgreer2015@gmail.com",
-        pass:"Fenderdg2@"
+        user: ,
+        pass:
     },
 }),
 //grabbing email templates
@@ -19,7 +19,8 @@ function sendEmail(obj){
 // create array of objcts for users 
 let users = [
     {   
-     
+        name: 'drew',
+        email: 'drewgreer12@gmail.com'
     },
 
 ];
